@@ -1,65 +1,32 @@
-/* :root{
-
-    --color-1: #F29F05;
-    --color-2: #F27405;
-    --color-3: #F24405;
-    --color-4: #A60321;
-    --color-5: #8C311C;
-    --color-main: rgba(219, 210, 198, 0.5);
-
-    --background-page: url(/media/fondo.jpg);
-    
-    
-    --fuente-h: 'Playfair Display', serif;
-    --fuentes-p: 'Lato', sans-serif;
-
-
-    --font-size: 16px;
-} */
-
-/*Normalize*/
-
-/* *{
-    margin: 0;
-    padding: 0; 
-    box-shadow: border-box; 
-    content-box; 
-} */
-
+:root{
+    --color-ppal: rgb(255,255,255);
+    --color-ticket: rgb(34,160,63);
+    --bg-gris-o: rgb(53,58,64);   
+    --color-sec: rgb(154,158,161);
+    --color-react: rgb(41,155,175);
+    --bt-2: rgb(150,201,62);
+    --bg-footer: rgb(28,56,70);  
+}
 
 /*Nav*/
 .bg-nav-gris{
-    background-color: rgb(53,58,64);
+    background-color: var(--bg-gris-o);
 }
 
 .navbar{
-    --bs-navbar-color: rgba(250, 250, 250,0.65);
-    --bs-navbar-toggler-border-color: rgba(254,255,253, 0.35);
+    --bs-navbar-color: var(--color-sec);
+    --bs-navbar-toggler-border-color:var(--color-sec);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28254, 255, 253, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     --bs-navbar-toggler-focus-width: 0.1rem;
 }
 
-.navbar-toggler{
-    border: 2px solid;
-}
-
-.navbar-brand{
-    color: rgb(254,255,253);
-}
-
-.navbar-brand:hover{
-    color: rgb(254,255,253);
-}
-
 .navbar-nav{
-    --bs-nav-link-color: rgb(154,158,161);
-    --bs-navbar-active-color: rgb(254,255,253);
-    
+    --bs-nav-link-color: var(--color-sec);
+    --bs-navbar-active-color: var(--color-ppal); 
 }
 
 .nav-link:hover{
-    color: rgb(254,255,253);  
-
+    color: var(--color-ppal);  
 }
 
 .logo{
@@ -68,82 +35,74 @@
 }
 
 .navbar-nav .ticket{
-    --bs-nav-link-color: rgb(34,160,63);    
+    --bs-nav-link-color: var(--color-ticket);    
 }
 
 .ticket .nav-link:hover{
-    color: rgb(34,160,63);
+    color: var(--color-ppal);
 }
 
 .bg-btn-ticket{
-    background-color: rgb(34,160,63);
+    background-color: var(--color-ticket);
 }
 
-/*Edificio Aguas*/
+.bg-btn-ticket:hover{
+    background-color: var(--color-ppal);
+    color: var(--color-ticket);
+    border-color: var(--color-ppal);
+}
 
-.presentacion{
-    height: 100vh;
+/*Sección presentación*/
+
+.presentacion{    
     background-image: url("/media/ba1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.fondo{
-    height: 100vh;
-}
+/*Sección oradores */
 
-.info{
-    width: 100%;
-    height: 100vh;
-}
-
-.texto{
-    width: 45%;
-    height: 75%;
-}
-
-/* Oradores */
 .bg-react{
-    background-color: rgb(41,155,175);    
+    background-color: var(--color-react);    
 }
 
-
-/* Seccion De imagen y texto */
+/* Sección lugar y fecha */
 
 .bg-gris{
-    background-color: rgb(53,58,64);
-}
-
-
-
-/* Seccion Formulario */
-
-.formulario .btn{
-    background-color: rgb(150,201,62);
-    border: none;   
-}
-
-.formulario .btn:hover{
-    background-color: rgba(150,201,62, 0.75);
-}
-
-
-/* Footer */
-
-.footer{    
-    background-color: rgb(30,81,112);
-
+    background-color: var(--bg-gris-o);
 }
 
 @media (max-width: 575.98px) {
-    .border-xs-left-none {
+    .border-sm-left-none {
         border-left: none !important; 
         }
     }
     
-@media (max-width: 767.98px) {
-    .border-sm-left-none {
+@media (max-width: 991.98px) {
+    .border-lg-left-none {
         border-left: none !important; 
     }
+}
+
+/* Sección formulario */
+
+.formulario .btn{
+    background-color: var(--bt-2);
+    border: none;   
+}
+
+.formulario .btn:hover{
+    background-color: var(--color-ppal);
+    color: var(--bt-2);
+}
+
+/* Footer */
+
+.footer{    
+    background-color: var(--bg-footer);
+}
+
+.footer ul{
+    list-style: none;
 }
