@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#form">Conviértete en orador</a>
                         </li>
                         <li class="nav-item ticket">
-                            <a class="nav-link comprarTicket" href="">Comprar tickets</a>
+                            <a class="nav-link " href="comprarTicket.html">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -62,82 +62,10 @@
                     <h1>Conf Bs As</h1>
                     <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                     <button type="button" class="btn btn-outline-light mb-2">Quiero ser orador</button>
-                    <button type="button" class="btn btn-success bg-btn-ticket mb-2 comprarTicket">Comprar tickets</button>                    
+                    <button type="button" class="btn btn-success bg-btn-ticket mb-2"><a href="comprarTicket.html">Comprar tickets</a></button>                    
                 </div>
             </div>
-    </section>  
-
-    <!-- Seccion Tickets -->
-
-    <section class="container my-4 contenedorTicket p-0 " id="contenedorTicket">
-        <div class="row g-1 mb-2 text-center">
-            <div class="col-4">
-                <div class="card border border-2 border-primary-subtle rounded-0">                    
-                    <h4 class="mt-4">Estudiante</h4>
-                    <p class="fs-5">Tienen un descuento</p>
-                    <p class="fs-6 fw-bold">80%</p>
-                    <p class="fw-light"><small>*presentar documentación</small></p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card border border-2 border-success-subtle rounded-0"> 
-                    <h4 class="mt-4">Trainee</h4>
-                    <p class="fs-5">Tienen un descuento</p>
-                    <p class="fs-6 fw-bold">50%</p>
-                    <p class="fw-light"><small>*presentar documentación</small></p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card border border-2 border-warning-subtle rounded-0">
-                    <h4 class="mt-4">Junior</h4>
-                    <p class="fs-5">Tienen un descuento</p>
-                    <p class="fs-6 fw-bold">15%</p>
-                    <p class="fw-light"><small>*presentar documentación</small></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-3 text-uppercase text-center">
-            <h6 class="fw-normal">Venta</h6>
-            <h1>Valor de ticket $200</h1>
-        </div>
-        
-        <form class="row g-2" id="form-ticket">
-            <div class="col-6">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-            </div>
-            <div class="col-6 mb-2">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-            </div>
-            <div class="mb-2">                
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
-            </div>
-            <div class="col-6">
-                    <label for="cantidad" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" id="cantidad" placeholder="cantidad">
-            </div>
-            <div class="col-6 mb-4">
-                <label for="porcentaje" class="form-label">Categoría</label>
-                <select class="form-select" id="porcentaje" aria-label="Default select example">
-                    <option selected value="80">Estudiante</option>
-                    <option value="50">Trainee</option>
-                    <option value="15">Junior</option>
-                </select>
-            </div>
-            <div class="col-12 mb-3">                
-                <div class="border-primary-subtle text-primary-emphasis mb-0 px-3 py-3 alert alert-primary" role="alert">
-                    Total a Pagar: $
-                    <span id="totalPagar"></span>                
-                </div>
-            </div>
-            <div class="col-6 d-grid">
-                <button class="btn btn-primary btn-verde" id="borrar" type="reset">Borrar</button>
-            </div>
-            <div class="col-6 d-grid">
-                <button class="btn btn-primary btn-verde" id="resumen" type="submit">Resumen</button>
-            </div>
-        </form>   
-    </section>
+    </section>      
 
     <!-- Seccion Oradores -->
 

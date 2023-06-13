@@ -55,18 +55,21 @@
 /*Sección presentación*/
 
 .presentacion{    
-    background-image: url("media/ba1.jpg");
+    background-image: url("../../media/ba1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-/*Sección Tickets */
-
-.contenedorTicket{
-    display: none;
-    width: 55%;
+.presentacion a{
+    text-decoration: none;
+    color: var(--color-ppal);    
 }
+
+.presentacion a:hover{
+    color: var(--color-ticket);
+}
+
 
 /*Sección oradores */
 
@@ -113,4 +116,10 @@
 
 .footer ul{
     list-style: none;
+}
+
+/*Sección Tickets */
+
+.contenedorTicket{
+    width: 55%;
 }
